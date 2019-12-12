@@ -1,0 +1,21 @@
+#include <iostream>
+#include <cmath>
+#include <algorithm>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+    setlocale(LC_CTYPE, "Russian");
+int n=1983; int i,l,m;
+string c[6] {"","зеленый", "красный", "желтый", "белый" , "черный"};
+string g[13] {"","крысы", "коровы", "тигра", "зайца", "дракона", "змеи", "лошади", "овцы",
+"обезьяны", "курицы", "собаки" , "свиньи"};
+cout<<"год "; cin>>l;
+if ((l-n)%12>=0) {i=(l-n-1)/12+1;} 
+cout<<"год "<< c[i]<<ends;
+m=l-n;
+cout<<" "<< g[m]<<endl;
+
+return 0;
+}
