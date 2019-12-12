@@ -2,40 +2,30 @@
 
 using namespace std;
 
-int main () 
+int main()
 {
-setlocale(LC_ALL, "Russian");
-  char C;
-  int N;
-  cout << "Введите символ ";
-  cin >> C;
-  cout << "Введите цифровую команду ";
-  cin >> N;
-  cout << "Введите направление"; 
-  switch (N) 
-  {
-    case 1: switch (C) 
-    {
-        case 'E': cout << "N"; break;
-        case 'S': cout << "E"; break; 
-   		case 'N': cout << "W"; break;
-   		case 'W': cout << "S"; break;
-    } break ;
-	case -1: switch (C) {
-	    case 'W': cout << "N"; break;
-   		case 'N': cout << "E"; break;
-   		case 'S': cout << "W"; break;  
-   	    case 'E': cout << "S"; break;
-	} break;
-	case 0: switch (C) {
-   		case 'N': cout << "N"; break;
-   		case 'E': cout << "E"; break;
-   		case 'W': cout << "W"; break;
-   		case 'S': cout << "S"; break;  
-	} break;
-   }
-      cout << endl;
-
-   return 0;
-
+char c; int n;
+cout<<"C= "; cin>>c;
+cout<<"N= "; cin>>n;
+if(c=='s'){
+if(n==-1){cout<<"vostok"<<ends;}
+if(n==1){cout<<"zapad"<<ends;}
+if(n==0){cout<<"sever"<<ends;}
+}
+if(c=='y'){
+if(n==-1){cout<<"zapad"<<ends;}
+if(n==1){cout<<"vostok"<<ends;}
+if(n==0){cout<<"yug"<<ends;}
+}
+if(c=='z'){
+if(n==-1){cout<<"sever"<<ends;}
+if(n==1){cout<<"yug"<<ends;}
+if(n==0){cout<<"zapad"<<ends;}
+}
+if(c=='v'){
+if(n==-1){cout<<"yug"<<ends;}
+if(n==1){cout<<"sevsr"<<ends;}
+if(n==0){cout<<"vostok"<<ends;}
+}
+return 0;
 }
